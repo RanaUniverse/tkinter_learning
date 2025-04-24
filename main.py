@@ -11,17 +11,43 @@ root.geometry(size)
 bg_color = "#FFFFFF"
 root.configure(background=bg_color)
 
+
+# First label
 labeled_text = "Rana Universe"
 label = Label(
     root,
     text=labeled_text,
-    bg="#FFFFFF",
+    bg=bg_color,
     fg="green",
     font=("Helvetica", 30, "bold"),
     padx=10,
     pady=10,
 )
+label.pack()
 
-# label.pack()
-label.pack(side='left', fill='y', expand=True, padx=10, pady=10)
+# Second label
+second_label = Label(
+    root,
+    text="Welcome to the second line!",
+    bg=bg_color,
+    fg="blue",
+    font=("Helvetica", 20),
+    padx=10,
+    pady=10,
+)
+second_label.pack()
+
+# Second label
+second_label = Label(
+    root,
+    text="This is 3rd Line",
+    bg=bg_color,
+    fg="blue",
+    font=("Helvetica", 20),
+    padx=10,
+    pady=10,
+)
+second_label.pack()
+
+
 root.mainloop()
